@@ -3,39 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>KC: Homepage</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>KC Fedellaga</h1>
-    <div>
-      <p id="tagline">Jack of all trades, master of... exactly that :)</p>
-      <p>
-        <span class="list-main">(BSc) SIAT Major,</span> looking to concentrate on <span class="list-main">Extended Reality and Game
-        Design & AI and Data Science for Human-Centered Systems
-      </p></span>
-      <p>Some of my favourite things include:</p>
-      <ul>
-        <li>Playing music & performing arts</li>
-        <li>Escapism and imaginative worlds --> Dungeons & Dragons</li>
-        <li>Cyberpunk 2077</li>
-        <li>"Strawberry Mimosa" by fromis_9</li>
-        <li>"Slingshot (＜★)" by NMIXX</li>
-        <li>Irresponsibly spending on merch collections</li>
-        <li>Side characters with deeply depressing backstories that may or may not survive 'til the end</li>
-        <li>Annie Leonhardt from Attack on Titan (unrelated to previous)</li>
-        <li>Hyperfixing hard on new gacha games before quitting them later</li>
-        <li>Arknights, tactical RPG/tower defence gacha game (unrelated to previous)</li>
-        <li>Honourable Mention: Extended Reality and Game Design</li>
-        <li>Honourable Mention: AI and Data Science for Human-Centered Systems</li>
-      </ul>
+    <header>
+      <div id="titles">
+        <h1>KC Fedellaga</h1>
+        <p id="tagline">
+          SIAT Major | BSc | Extended Reality & Game Design - AI & Data Science
+          for Human-Centered Systems
+        </p>
+      </div>
+      <table id="head-links">
+        <tr>
+          <td><a href="#classwork">IAT355</a></td>
+          <td><a href="#education">Education</a></td>
+          <td><a href="#skills">Skills</a></td>
+          <td><a href="#experience">Experience</a></td>
+          <td><a href="#contact">Contact Me</a></td>
+        </tr>
+      </table>
+    </header>
+    <div id="about-me">
+      <div id="interest-section">
+        <img
+          id="self-img"
+          src="./images/me-by-me.png"
+          alt="A digital illustration by me."
+        />
+
+        <div id="interests-grid">
+          <div class="interest">
+            <span class="bullet-icon">♫</span>
+            <span>
+              <span class="list-main">Music, Performing Arts</span>
+            </span>
+          </div>
+
+          <div class="interest">
+            <span class="bullet-icon">❦</span>
+            <span>
+              <span class="list-main"
+                >Escapism and Imaginative Worlds, RPGs</span
+              >
+              → Dungeons & Dragons
+            </span>
+          </div>
+
+          <div class="interest">
+            <span class="bullet-icon">$</span>
+            <span>
+              Irresponsibly spending on
+              <span class="list-main">merch collections</span>
+            </span>
+          </div>
+
+          <div class="interest">
+            <span class="bullet-icon">☻</span>
+            <span>
+              <span class="list-main">Side characters</span> with deeply
+              depressing backstories that may or may not survive 'til the end
+            </span>
+          </div>
+
+          <div class="interest">
+            <span class="bullet-icon">ツ</span>
+            <span>
+              Hyperfixating on new
+              <span class="list-main">gacha games</span> before quitting them
+              later
+            </span>
+          </div>
+
+          <div class="interest">
+            <span class="bullet-icon">⍟</span>
+            <span>
+              Fe3O4: <span class="list-main">BREAK</span>, Fe3O4:
+              <span class="list-main">STICK OUT</span>, Fe3O4:
+              <span class="list-main">FORWARD</span> EP trilogy
+              <span class="list-main">by NMIXX</span>
+            </span>
+          </div>
+
+          <div class="interest">
+            <span class="bullet-icon">☞</span>
+            <span>
+              <span class="list-main">Honourable Mention:</span> Making data
+              visualizations...!
+            </span>
+          </div>
+
+          <div class="interest">
+            <span class="bullet-icon">☞</span>
+            <span>
+              <span class="list-main">Honourable Mention:</span>
+              Extended Reality and Game Design
+            </span>
+          </div>
+
+          <div class="interest">
+            <span class="bullet-icon">☞</span>
+            <span>
+              <span class="list-main">Honourable Mention:</span> AI and Data
+              Science for Human-Centered Systems
+            </span>
+          </div>
+        </div>
+      </div>
+      <p id="img-cap">"Kace by Kace", drawn by me for another profile.</p>
     </div>
+
     <br />
-    <div>
+
+    <div id="classwork">
+      <h2>(Spring 2026) IAT 355: Introduction to Visual Analytics</h2>
+      <table id="iat355-tb">
+        <tr>
+          <td class="bullet-icon">☑</td>
+          <td>
+            <a href="visualizations.html">Visualisations Showcase</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="education">
       <h2>Education</h2>
       <ul>
         <li>
-          <span class="list-main">Simon Fraser University, Undergraduate</span>
+          <span class="list-main">Simon Fraser University,</span> UndergraduateS
           [Current, since Sept 2022]
         </li>
         <li>
@@ -44,7 +146,7 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div id="skills">
       <h2>Skills</h2>
       <ul>
         <li>[Super genius creativity brain storm]</li>
@@ -59,28 +161,32 @@
         <li>[good vibes bringer for everyone on the team :D]</li>
       </ul>
     </div>
-    <h2>Experience</h2>
-    <h3>SIAT and Creative Work Examples:</h3>
-    <ul>
-      <li>Illustration Piece Examples</li>
-      <li>Special Custom Sticker Commissions</li>
-      <li>IAT235: SFU Complaints Site</li>
-      <li>IAT167: SmashTV-Style Shooter Game</li>
-      <li>IAT265: Stamp Painting App</li>
-    </ul>
-    <h4>Other Work Experience:</h4>
-    <ul>
-      <li>
-        I've also worked as a private tutor for kids in elementary and secondary
-        school (K-12) for 4 years!
-      </li>
-    </ul>
+    <div id="experience">
+      <h2>Experience</h2>
+      <h3>SIAT and Creative Work Examples:</h3>
+      <ul>
+        <li>Illustration Piece Examples</li>
+        <li>Special Custom Sticker Commissions</li>
+        <li>IAT235: SFU Complaints Site</li>
+        <li>IAT167: SmashTV-Style Shooter Game</li>
+        <li>IAT265: Stamp Painting App</li>
+      </ul>
+      <h4>Other Work Experience:</h4>
+      <ul>
+        <li>
+          I've also worked as a private tutor for kids in elementary and
+          secondary school (K-12) for 4 years!
+        </li>
+      </ul>
+    </div>
 
-    <h2>Contact Information</h2>
-    <ul>
-      <li>Email link</li>
-      <li>SFU Email</li>
-      <li><a>LinkedIn</a></li>
-    </ul>
+    <div id="contact">
+      <h2>Contact Information</h2>
+      <ul>
+        <li><a href="mailto:fedellaga.kc@gmail.com">Email</a></li>
+        <li><a href="mailto:kfa42@sfu.ca">SFU Email</a></li>
+        <li><a>LinkedIn</a></li>
+      </ul>
+    </div>
   </body>
 </html>
