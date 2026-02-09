@@ -43,7 +43,7 @@ header {
   padding-right: 10px;
 }
 
-h1 {
+h1.main-h1 {
   margin-top: 0px;
   padding: 10px;
   padding-top: 15px;
@@ -52,7 +52,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-h2 {
+h2.main-h2 {
   color: aliceblue;
   font-weight: 500;
   margin: 0px;
@@ -113,6 +113,7 @@ td .list-main {
   color: aliceblue;
   font-size: 1.2rem;
   font-weight: 400;
+  text-align: right;
 }
 
 .list-main {
@@ -201,6 +202,81 @@ td .list-main {
   color: #ffe6ef;
 }
 
+.exp-grid {
+  display: grid;
+  grid-template-areas:
+    "illustrations iat265"
+    "iat167       iat235";
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  justify-items: center;
+}
+
+/* reference: https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+@media (max-width: 900px) {
+  .exp-grid {
+    grid-template-areas:
+      "illustrations"
+      "iat265"
+      "iat167"
+      "iat235";
+
+    grid-template-columns: 1fr;
+  }
+}
+
+.illustrations {
+  grid-area: illustrations;
+  justify-items: center;
+  text-align: center;
+}
+
+#gallery {
+  display: flex;
+  gap: 15px;
+}
+
+.iat265 {
+  grid-area: iat265;
+}
+
+.iat167 {
+  grid-area: iat167;
+}
+
+.iat235 {
+  grid-area: iat235;
+}
+
+.work-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid-header {
+  font-weight: 400;
+  text-decoration: underline;
+  padding: 15px;
+}
+
+.illus-ex {
+  width: clamp(200px, 17vw, 500px);
+  height: auto;
+}
+
+.emote-ex {
+  width: clamp(80px, 11vw, 200px);
+  height: auto;
+}
+
+.gif {
+  width: clamp(360px, 30vw, 600px);
+  height: auto;
+}
+
 #contact {
   border-width: 15px 0px 15px 0px;
   border-style: double;
@@ -213,15 +289,66 @@ td .list-main {
   color: #ffe6ef;
 }
 
-.work-example {
+h1.vispage-h1 {
+  color: black;
+  margin: 20px;
+  font-size: 2.7rem;
+  font-weight: 800;
+}
+
+h2.vispage-h2 {
+  color: black;
+  margin: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.svg-caption {
+  background-color: #1b1a1b;
+  color: aliceblue;
+  border: #ffe6ef double 7px;
+  margin: 20px;
+  padding: 20px;
+  font-weight: 400;
+}
+
+svg.lec1-svg {
+  max-width: 420px;
+  height: auto;
+}
+
+#a2-visualizations {
+  margin: 50px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#lec1-example {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
 }
 
-.illus-ex {
-  max-width: 10%;
+#lec1-svg {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
 }
 
-.emote-ex {
-  max-width: 6%;
+#art-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+}
+
+#svg-art {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
 }

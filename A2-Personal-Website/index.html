@@ -15,7 +15,7 @@
   <body>
     <header>
       <div id="titles">
-        <h1>KC Fedellaga</h1>
+        <h1 class="main-h1">KC Fedellaga</h1>
         <p id="tagline">
           SIAT Major | BSc | Extended Reality & Game Design - AI & Data Science
           for Human-Centered Systems
@@ -123,12 +123,16 @@
     <br />
 
     <div id="classwork">
-      <h2>(Spring 2026) IAT 355: Introduction to Visual Analytics</h2>
+      <h2 class="main-h2">
+        (Spring 2026) IAT 355: Introduction to Visual Analytics
+      </h2>
       <table id="iat355-tb">
         <tr>
           <td class="bullet-icon">☑</td>
           <td>
-            <a href="visualizations.html">Visualisations Showcase</a>
+            <a href="visualizations.html" class="alert-link"
+              >Visualisations Showcase</a
+            >
           </td>
         </tr>
       </table>
@@ -163,75 +167,112 @@
       </ul>
     </div>
     <div id="experience">
-      <h2>Experience</h2>
+      <h2 class="main-h2">Experience</h2>
       <h3>SIAT and Creative Work Examples:</h3>
-      <div id="exp-grid">
-        <div class="work-example">
-          <span class="grid-header"
-            >Character Illustration Samples: D&D Game Art</span
-          >
-          <div id="gallery">
-            <a href="./images/rhian.png" target="_blank" rel="noopener">
+      <div class="exp-grid">
+        <div class="illustrations">
+          <div class="work-example">
+            <span class="grid-header"
+              >Character Illustration Samples: D&D Game Art</span
+            >
+            <div id="gallery">
+              <a href="./images/rhian.png" target="_blank" rel="noopener">
+                <img
+                  class="illus-ex"
+                  src="./images/rhian.png"
+                  alt="D&D Character Illustration: Rhian the Battle Smith Artificer"
+                />
+              </a>
+              <a href="./images/esera.png" target="_blank" rel="noopener">
+                <img
+                  class="illus-ex"
+                  src="./images/esera.png"
+                  alt="D&D Character Illustration: Esera the Way of Mercy Monk"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="work-example">
+            <span class="grid-header">Special Custom Sticker Commissions</span>
+            <div class="gallery">
               <img
-                class="illus-ex"
-                src="./images/rhian.png"
-                alt="D&D Character"
+                class="emote-ex"
+                src="./images/hokkepeek.png"
+                alt="A digitally illustrated emote of Hokuto Hidaka from Enstars in chibi style"
               />
-            </a>
-            <a href="./images/esera.png" target="_blank" rel="noopener">
               <img
-                class="illus-ex"
-                src="./images/esera.png"
-                alt="D&D Character 2"
+                class="emote-ex"
+                src="./images/hokkecrab.png"
+                alt="A digitally illustrated emote of Hokuto Hidaka from Enstars in chibi style"
               />
-            </a>
+              <img
+                class="emote-ex"
+                src="./images/hokkepray.png"
+                alt="A digitally illustrated emote of Hokuto Hidaka from Enstars in chibi style"
+              />
+            </div>
           </div>
         </div>
-        <div class="work-example">
-          <span class="grid-header">Special Custom Sticker Commissions</span>
-          <div class="gallery">
-            <img
-              class="emote-ex"
-              src="./images/hokkepeek.png"
-              alt="A digitally illustrated emote of Hokuto Hidaka from Enstars in chibi style"
-            />
-            <img
-              class="emote-ex"
-              src="./images/hokkecrab.png"
-              alt="A digitally illustrated emote of Hokuto Hidaka from Enstars in chibi style"
-            />
-            <img
-              class="emote-ex"
-              src="./images/hokkepray.png"
-              alt="A digitally illustrated emote of Hokuto Hidaka from Enstars in chibi style"
-            />
+
+        <!-- reference for GIF: https://stackoverflow.com/questions/72936848/how-do-you-add-gifs-to-html -->
+        <div class="iat167">
+          <div class="work-example">
+            <span class="grid-header"
+              >IAT167: Tomb Runner: Escape Act (SmashTV-Style Shooter
+              Game)</span
+            >
+            <video
+              class="gif"
+              autoplay
+              loop
+              muted
+              src="./images/iat167-projsample.mp4"
+            ></video>
+          </div>
+        </div>
+
+        <div class="iat235">
+          <div class="work-example">
+            <span class="grid-header">IAT235: SFU Complaints Site</span>
+            <video
+              class="gif"
+              autoplay
+              loop
+              muted
+              src="./images/iat235-finalprojsample.mp4"
+            >
+              A clip from my group's final project video of our complaints
+              website design from IAT235, at 8.5x speed and looped to mimic a
+              GIF.
+            </video>
+          </div>
+        </div>
+
+        <div class="iat265">
+          <div class="work-example">
+            <span class="grid-header"
+              >IAT265: Macrotuff Colour (Stamp Painting App/Mini-Game)</span
+            >
+            <video
+              class="gif"
+              autoplay
+              loop
+              muted
+              src="./images/iat265-projsample.mp4"
+            ></video>
           </div>
         </div>
       </div>
-
-      <div class="work-example">
-        <span class="grid-header">IAT235: SFU Complaints Site</span>
+      <div class="other-exp">
+        <h4>Other Work Experience:</h4>
+        <ul>
+          <li>
+            I've also worked as a private tutor for kids in elementary and
+            secondary school (K-12: English & Math, Pre-Calc) for 4 years!
+          </li>
+        </ul>
       </div>
-
-      <div class="work-example">
-        <span class="grid-header">IAT167: SmashTV-Style Shooter Game</span>
-      </div>
-
-      <div class="work-example">
-        <span class="grid-header">IAT265: Stamp Painting App</span>
-      </div>
-      <!-- <ul>
-        <li>IAT235: SFU Complaints Site</li>
-        <li>IAT167: SmashTV-Style Shooter Game</li>
-        <li>IAT265: Stamp Painting App</li>
-      </ul> -->
-      <h4>Other Work Experience:</h4>
-      <ul>
-        <li>
-          I've also worked as a private tutor for kids in elementary and
-          secondary school (K-12) for 4 years!
-        </li>
-      </ul>
     </div>
 
     <div id="contact">
@@ -240,8 +281,9 @@
         <li><a href="mailto:fedellaga.kc@gmail.com">Email</a></li>
         <li><a href="mailto:kfa42@sfu.ca">SFU Email</a></li>
         <li><a>LinkedIn</a></li>
-        <!-- <li><a>LinkedIn</a></li> -->
       </ul>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
